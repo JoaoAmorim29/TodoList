@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/style.css">
+    <title>TodoList</title>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1 class="header-title">Lista de Tarefas</h1>
+        </header>
+
+        <div class="navBar">
+            <div class="navBar-pesquisa">
+                <label for="pesquisaInput">Pesquise:</label>
+                <div class="pesquisaInput">
+                    <input type="text" name="pesquisa" id="pesquisaInput" placeholder="Nome da tarefa">
+                    <i class="fa-solid fa-delete-left"></i>
+                </div>
+            </div>
+
+            <div class="navBar-filtro">
+                <label for="filtroSelect">Filtre:</label>
+                <select class="filtroSelect">
+                    <option value="todos">Todos</option>
+                    <option value="feitos">Feitos</option>
+                    <option value="fazer">Fazer</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="criar none">
+            <div class="criarInputDiv">
+                <label for="criarInput">Adicione sua tarefa: </label>
+                <input type="text" name="input-criar" class="criarInput" placeholder="O que vai fazer?">
+            </div>
+            
+            <div class="errors">
+                <ul class="ulErrorsCriar"></ul>
+            </div>
+
+            <div class="criar-buttons">
+                <button class="criarBtn" role="button">Criar</button>
+            </div>
+        </div>
+
+        <div class="editar none">
+            <div class="editarInputDiv">
+                <label for="editarInput">Edite sua tarefa: </label>
+                <input type="text" name="input-editar" class="editarInput" placeholder="O que vai fazer?">
+            </div>
+
+            <div class="errors">
+                <ul class="ulErrorsEdit"></ul>
+            </div>
+
+            <div class="editar-buttons">
+                <button class="editarBtn" role="button">Atualizar</button>
+            </div>
+        </div>
+        
+        <div class="todoList">
+        </div>
+
+        <button class="adicionarBtn">Adicionar Tarefa</button>
+    </div>
+
+    <script src="/js/adicionar.js"></script>
+    <script src="/js/criar.js"></script>
+    <script src="/js/tarefaButtons.js"></script>
+    <script src="/js/pesquisa.js"></script>
+    <script src="/js/filtre.js"></script>
+    <script src="/js/reset.js"></script>
+    <script src="/js/validate.js"></script>
+</body>
+</html>

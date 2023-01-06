@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica';
+    color: #1f104f;
+}
+
+body{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding-top: 10rem;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 42%, rgba(6,87,173,1) 100%);
+}
+
+.container{
+    background-color: #fff;
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+header{
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #ccc;
+}
+
+.navBar{
+    display: flex;
+    padding: 15px 0;
+    align-items: center;
+    border-bottom: 2px solid #ccc;
+}
+
+label{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.navBar-pesquisa{
+    border-right: 2px solid #ccc;
+    padding-right: 32px;
+}
+
+.pesquisaInput{
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
+}
+
+.pesquisaInput input{
+    height: 1.8rem;
+    width: 14rem;
+    margin-right: 4px;
+    padding: 3px;
+}
+
+i{
+    border: 1px solid #000;
+    padding: 5px;
+    cursor: pointer;
+    width: 35px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+i:hover{
+    background-color: #0A66C2;
+    border-color: #0A66C2;
+    color: #ffffff;
+    transition: .6s;
+}
+
+i:active{
+    background: #09223b;
+    color: rgb(255, 255, 255, .7);
+}
+
+.navBar-filtro{
+    padding-left: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.navBar-filtro label{
+    margin-bottom: 2px;
+}
+
+.navBar-filtro select{
+    width: 6rem;
+    height: 1.8rem;
+}
+
+.criar{
+    padding: 15px 0;
+    border-bottom: 2px solid #ccc;
+}
+
+.criarInputDiv{
+    display: flex;
+    flex-direction: column;
+}
+
+.criarInputDiv label{
+    margin-bottom: 4px;
+}
+
+.criarInputDiv input{
+    height: 1.8rem;
+    width: 12rem;
+    padding: 3px;
+    margin-bottom: 15px;
+}
+
+.criarBtn {
+  align-items: center;
+  background-color: #0A66C2;
+  border: 0;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  width: 12rem;
+  height: 2rem;
+  border-radius: 7px;
+}
+
+.criarBtn:hover,
+.criarBtn:focus { 
+  background-color: #16437E;
+  color: #ffffff;
+  transition: .6s;
+}
+
+.criarBtn:active {
+  background: #09223b;
+  color: rgb(255, 255, 255, .7);
+  transition: .6s;
+}
+
+.criarBtn:disabled { 
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+  transition: .6s;
+}
+
+.editar{
+    padding: 15px 0;
+    border-bottom: 2px solid #ccc;
+}
+
+.editarInputDiv{
+    display: flex;
+    flex-direction: column;
+}
+
+.editarInputDiv label{
+    margin-bottom: 4px;
+}
+
+.editarInputDiv input{
+    height: 1.8rem;
+    width: 12rem;
+    padding: 3px;
+    margin-bottom: 15px;
+}
+
+.editarBtn {
+  align-items: center;
+  background-color: #0A66C2;
+  border: 0;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  width: 12rem;
+  height: 2rem;
+  border-radius: 7px;
+}
+
+.editarBtn:hover,
+.editarBtn:focus { 
+  background-color: #16437E;
+  color: #ffffff;
+  transition: .6s;
+}
+
+.editarBtn:active {
+  background: #09223b;
+  color: rgb(255, 255, 255, .7);
+  transition: .6s;
+}
+
+.editarBtn:disabled { 
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+  transition: .6s;
+}
+
+.todoList{
+    padding: 5px 0 15px;
+}
+
+.tarefa{
+    border-bottom: 2px solid #ccc;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .6s;
+}
+
+.tarefa-buttons i{
+    margin-left: 5px;
+}
+
+.adicionarBtn {
+    align-items: center;
+    background-color: #0A66C2;
+    border: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    width: 12rem;
+    height: 2rem;
+    border-radius: 7px;
+}
+
+.adicionarBtn:hover,
+.adicionarBtn:focus { 
+    background-color: #16437E;
+    color: #ffffff;
+    transition: .6s;
+}
+
+.adicionarBtn:active {
+    background: #09223b;
+    color: rgb(255, 255, 255, .7);
+    transition: .6s;
+}
+
+.adicionarBtn:disabled { 
+    cursor: not-allowed;
+    background: rgba(0, 0, 0, .08);
+    color: rgba(0, 0, 0, .3);
+    transition: .6s;
+}
+
+.none{
+    display: none;
+}
+
+.sumindo{
+    opacity: 0;
+    transition: .6s;
+}
+
+.feito{
+    background-color: #0A66C2;
+}
+.feito h3{
+    color: #fff;
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+i{
+    border: 1px solid #000;
+    padding: 5px;
+    cursor: pointer;
+    width: 35px;
+    text-align: center;
+    border-radius: 2px;
+    background-color: #fff;
+}
+
+i:hover{
+    background-color: #0A66C2;
+    border-color: #fff;
+    color: #ffffff;
+    transition: .6s;
+}
+
+i:active{
+    background: #09223b;
+    color: rgb(255, 255, 255, .7);
+}
+
+.cancelBtn {
+    align-items: center;
+    background-color: #ff0000;
+    border: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    width: 12rem;
+    height: 2rem;
+    border-radius: 7px;
+}
+
+.cancelBtn:hover,
+.cancelBtn:focus { 
+    background-color: #d11507;
+    color: #ffffff;
+    transition: .6s;
+}
+
+.cancelBtn:active {
+    background: #7a1b0c;
+    color: rgb(255, 255, 255, .7);
+    transition: .6s;
+}
+
+.cancelBtn:disabled { 
+    cursor: not-allowed;
+    background: rgba(0, 0, 0, .08);
+    color: rgba(0, 0, 0, .3);
+    transition: .6s;
+}
+
+.errors{
+    margin-bottom: 15px;
+}
+
+.errors ul{
+    list-style: none;
+    font-size: .9rem;
+}
+
+.errors li{
+    color: #ff0000;
+}
