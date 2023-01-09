@@ -328,8 +328,6 @@ i:active{
 
     .navBar-filtro{
         padding-left: 15px;
-        display: flex;
-        flex-direction: column;
     }
     
     .navBar-filtro label{
@@ -366,4 +364,80 @@ i:active{
         font-size: .8em;
     }
 
+}
+
+@media screen and (max-width: 450px){
+    header{
+        padding-bottom: 10px;
+    }
+
+    .container{
+        width: 70%;
+        padding-top: 15px;
+    }
+
+    .header-title{
+        font-size: 1.4em;
+    }
+
+    label{
+        font-size: .9rem;
+    }
+
+    .navBar-pesquisa{
+        padding-right: 10px;
+    }
+    
+    .pesquisaInput input{
+        height: 1.4rem;
+        width: 8rem;
+    }
+
+    .navBar-filtro{
+        padding-left: 10px;
+    }
+    
+    .navBar-filtro label{
+        margin-bottom: 2px;
+    }
+    
+    .navBar-filtro select{
+        width: 3.5rem;
+        height: 1.4rem;
+    }
+
+    i{
+        padding: 3.8px;
+        width: 25px;
+        font-size: .8rem;
+    }
+
+    .editarInputDiv input{
+        height: 1.6rem;
+        width: 12em;
+    }
+
+    .criarInputDiv input{
+        height: 1.6rem;
+        width: 12em;
+    }
+    
+    .tarefa-title{
+        font-size: .8rem;
+    }
+
+    .editarBtn{
+        height: 2.2em;
+        width: 12em;
+    }
+
+    .criarBtn{
+        height: 2.2em;
+        width: 12em;
+    }
+
+    .adicionarBtn{
+        height: 2.2em;
+        width: 12em;
+    }
 }
