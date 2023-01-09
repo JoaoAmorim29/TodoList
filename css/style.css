@@ -289,37 +289,6 @@ i:active{
     color: rgb(255, 255, 255, .7);
 }
 
-.cancelBtn {
-    align-items: center;
-    background-color: #ff0000;
-    border: 0;
-    box-sizing: border-box;
-    color: #ffffff;
-    cursor: pointer;
-    width: 12rem;
-    height: 2rem;
-    border-radius: 7px;
-}
-
-.cancelBtn:hover,
-.cancelBtn:focus { 
-    background-color: #d11507;
-    color: #ffffff;
-    transition: .6s;
-}
-
-.cancelBtn:active {
-    background: #7a1b0c;
-    color: rgb(255, 255, 255, .7);
-    transition: .6s;
-}
-
-.cancelBtn:disabled { 
-    cursor: not-allowed;
-    background: rgba(0, 0, 0, .08);
-    color: rgba(0, 0, 0, .3);
-    transition: .6s;
-}
 
 .errors{
     margin-bottom: 15px;
@@ -332,4 +301,68 @@ i:active{
 
 .errors li{
     color: #ff0000;
+}
+
+
+@media screen and (max-width: 601px){
+    .header-title{
+        font-size: 1.6em;
+    }
+
+    .container{
+        width: 400px;
+    }
+
+    label{
+        font-size: 1rem;
+    }
+
+    .navBar-pesquisa{
+        padding-right: 15px;
+    }
+    
+    .pesquisaInput input{
+        height: 1.6rem;
+        width: 10rem;
+    }
+
+    .navBar-filtro{
+        padding-left: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .navBar-filtro label{
+        margin-bottom: 2px;
+    }
+    
+    .navBar-filtro select{
+        width: 4rem;
+        height: 1.6rem;
+    }
+
+    i{
+        padding: 4px;
+        width: 30px;
+    }
+
+    .editarInputDiv input{
+        margin-bottom: 0;
+        height: 1.6rem;
+        margin-bottom: 5px;
+    }
+
+    .criarInputDiv input{
+        margin-bottom: 0;
+        height: 1.6rem;
+        margin-bottom: 5px;
+    }
+    
+    .tarefa-title{
+        font-size: .9rem;
+    }
+
+    .errors ul{
+        font-size: .8em;
+    }
 }
